@@ -1,5 +1,5 @@
 import React from "react";
-import { Accordion, Container } from "react-bootstrap";
+import { Accordion } from "react-bootstrap";
 import { FAQ_DATA } from "./faq_data";
 
 import "./FAQ.css";

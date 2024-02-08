@@ -35,7 +35,7 @@ function CreateProblem() {
 
   // Checker code editor
   const [codes, setCodes] = useState({ cpp: CPP_DATA });
-  const [preferences, setPreferences] = useState(DEFAULT_PREFERENCE);
+  const [preferences,] = useState(DEFAULT_PREFERENCE);
 
   const [toast, ToastContainer] = useToast();
   const [loader, showLoader, hideLoader] = useLoader();

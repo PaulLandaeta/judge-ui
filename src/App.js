@@ -7,7 +7,6 @@ import "./globalStyles.css";
 import { isLoggedInAPI } from "./api/userAuth";
 
 import PrivateRoute from "./components/PrivateRoute";
-import Home from "./components/Home/Home";
 import Login from "./components/Auth/Login";
 import Header from "./components/LayoutComponents/Header/Header";
 import LandingPage from "./components/LandingPage/LandingPage";

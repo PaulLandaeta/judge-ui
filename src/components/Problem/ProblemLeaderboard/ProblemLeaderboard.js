@@ -21,7 +21,7 @@ function ProblemLeaderboard() {
   });
   const [showCodeModal, setShowCodeModal] = useState(false);
 
-  const userContext = useContext(UserContext);
+ // const userContext = useContext(UserContext);
   const params = useParams();
   const [toast, ToastContainer] = useToast();
 
@@ -88,7 +88,7 @@ function ProblemLeaderboard() {
       let leaderboard = res.leaderboard;
       for (let i = 0; i < leaderboard.length; i++) {
         leaderboard[i].languageLabel = AVAILABLE_LANGUAGES.find(
-          (language) => leaderboard[i].language == language.value
+          (language) => leaderboard[i].language === language.value
         ).label;
       }
       setLeaderboard(leaderboard);

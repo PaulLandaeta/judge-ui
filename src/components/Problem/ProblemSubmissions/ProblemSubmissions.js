@@ -84,7 +84,7 @@ function ProblemSubmissions() {
       let submissions = res.submissionsList;
       for (let i = 0; i < submissions.length; i++) {
         submissions[i].languageLabel = AVAILABLE_LANGUAGES.find(
-          (language) => submissions[i].language == language.value
+          (language) => submissions[i].language === language.value
         ).label;
       }
       setSubmissionsList(submissions);

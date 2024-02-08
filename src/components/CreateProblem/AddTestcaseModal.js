@@ -30,7 +30,6 @@ function AddTestcaseModal({ show, setShow, testcases, setTestcases }) {
 
     showLoader();
     try {
-      const res = {};
       const inputReader = new FileReader();
       const outputReader = new FileReader();
       let inputText = "";

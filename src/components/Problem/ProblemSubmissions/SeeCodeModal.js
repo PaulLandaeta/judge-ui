@@ -17,7 +17,7 @@ function SeeCodeModal({
   setShowCodeModal,
 }) {
   const [codes, setCodes] = useState(LANGUAGE_DATA);
-  const [preferences, setPreferences] = useState({
+  const [preferences, ] = useState({
     ...DEFAULT_PREFERENCE,
     language: AVAILABLE_LANGUAGES.find(
       (languagData) => languageLabel === languagData.label
@@ -34,7 +34,7 @@ function SeeCodeModal({
     ).value;
     newCodes[languageValue].code = code;
     setCodes(newCodes);
-  }, [code, languageLabel]);
+  },[code, languageLabel]);
 
   const copyCode = () => {
     navigator.clipboard.writeText(code);

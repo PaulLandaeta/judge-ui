@@ -92,7 +92,7 @@ export const getPreferencesAPI = async () => {
       tabSize: 4,
     },
   };
-  try {
+ /* try {
     const res = await axios.get(`${SERVER_URL}/problem/preference`, {
       withCredentials: true,
     });
@@ -101,7 +101,7 @@ export const getPreferencesAPI = async () => {
     if (err && err.response && err.response.data)
       return { success: false, ...err.response.data };
     return { success: false };
-  }
+  }*/
 };
 
 export const runCodeAPI = async (submissionInfo) => {

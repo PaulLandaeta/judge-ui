@@ -1,5 +1,5 @@
 import axios from "axios";
-import { CLIENT_URL, SERVER_URL } from "../config/config";
+import { SERVER_URL } from "../config/config";
 
 export const loginAPI = async (userData) => {
   const res = await axios.post(`${SERVER_URL}/users/login`, userData, {
@@ -9,7 +9,7 @@ export const loginAPI = async (userData) => {
 };
 
 export const registerAPI = async (userData) => {
-  const res = await axios.post(`${SERVER_URL}/users/register`, userData, {
+  const res = await axios.post(`${SERVER_URL}/api/v1/users/register`, userData, {
     withCredentials: true,
   });
   return res.data;
